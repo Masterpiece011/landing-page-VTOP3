@@ -1,0 +1,251 @@
+.main {
+    display: flex;
+    margin: 0 140px;
+}
+
+.main__project {
+    margin: 296px 0 392px;
+    width: 669px;
+    z-index: 120;
+}
+
+.main__project h2 {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.main__project h2 span {
+    color: #F97247;
+    text-transform: uppercase;
+}
+
+.main__project p {
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 48px;
+}
+
+.main__project button {
+    background-color: #F97247;
+    border: none;
+    text-transform: uppercase;
+    padding: 20px 72px;
+    color: #FFFFFF;
+    border-radius: 48px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.main__project button:hover {
+    transform: scale(1.2);
+}
+
+.main__project button:hover:active {
+    background-color: #fc9373;
+    transition: background-color .02s ease;
+}
+
+.main__animation {
+    width: 334px;
+    height: 1040px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    margin-left: 42px;
+    margin-right: 64px;
+}
+
+.main__animation::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: 1000;
+}
+
+.main__animation::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+.main__animation-line {
+    position: absolute;
+    top: -1139px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 3000px;
+    overflow: hidden;
+    margin-right: 16px;
+    opacity: 0.2;
+    animation: lineDown 10s infinite linear;
+    z-index: 120;
+    box-shadow: inset;
+}
+
+@keyframes lineUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-849.436px);
+    }
+}
+
+@keyframes lineDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(1096px);
+    }
+}
+
+.main__animation-line:nth-child(2) {
+    opacity: 0.6;
+    top: 8px;
+    left: calc(100px + 16px);
+    animation: lineUp 10s infinite linear;
+}
+
+.main__animation-line:nth-child(3) {
+    opacity: 0.4;
+    top: -1152px;
+    left: calc(100px + 16px + 100px + 16px);
+}
+
+.main__animation-line:last-child {
+    margin-right: 0;
+}
+
+.main__animation-line li {
+    margin-bottom: 19px;
+}
+
+.main__blub {
+    margin: 140px 0 227px;
+}
+
+.main__blub h2 {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main__blub-blog {
+    box-sizing: border-box;
+    padding-right: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 531px;
+    height: 595px;
+    border-radius: 100px;
+    border: 3px solid #F97247;
+    background-color: rgba(255, 255, 255, 0.1);
+    scrollbar-width: 8px;
+    scrollbar-color: #F97247;
+    overflow: hidden;
+    position: relative;
+}
+
+.main__blub ul {
+    padding: 24px 10px 24px 24px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main__blub ul::-webkit-scrollbar {
+    visibility: hidden;
+    width: 20px;
+    z-index: 30;
+    scroll-behavior: smooth;
+}
+
+.main__blub-scrollbar-track {
+    position: absolute;
+    width: 8px;
+    height: 403px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    right: 16px;
+    top: 96px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.main__blub-scrollbar-thumb {
+    width: 8px;
+    height: 104px;
+    background-color: #F97247;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.03s ease;
+}
+
+.main__blub ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main__blub ul li {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 16px 64px;
+    background-color: #311212;
+    border-radius: 196px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.main__blub ul li:hover {
+    background-color: #F97247;
+}
+
+.main__blub ul li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 339px;
+    min-height: 84px;
+
+    text-decoration: none;
+}
+
+.main__blub ul li a p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 16px;
+    width: 339px;
+    opacity: 0.6;
+    margin-top: 14px;
+}
+
+.main__blub ul li:last-child {
+    margin-bottom: 0;
+}
