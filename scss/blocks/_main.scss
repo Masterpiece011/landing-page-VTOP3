@@ -116,37 +116,6 @@
     margin-right: 16px;
     opacity: 0.2;
     z-index: 120;
-    box-shadow: inset;
-}
-
-@keyframes lineUp {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(-1184.72px);
-    }
-}
-
-@keyframes lineDownFirstLine {
-    from {
-        transform: translateY(-1184.72px);
-    }
-
-    to {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes lineDownSecondLine {
-    from {
-        transform: translateY(-1657.16px);
-    }
-
-    to {
-        transform: translateY(0px);
-    }
 }
 
 .main__animation-line:nth-child(1) {
@@ -218,6 +187,7 @@
 .main__blub ul {
     padding: 24px 10px 24px 24px;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -252,6 +222,11 @@
 
 .main__blub ul::-webkit-scrollbar {
     width: 8px;
+    visibility: hidden;
+}
+
+.main__blub ul::-webkit-scrollbar-corner {
+    visibility: hidden;
 }
 
 .main__blub ul li {
@@ -293,3 +268,34 @@
 .main__blub ul li:last-child {
     margin-bottom: 0;
 }
+
+@keyframes lineUp {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-1184.72px);
+    }
+}
+
+@keyframes lineDownFirstLine {
+    from {
+        transform: translateY(-1184.72px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes lineDownSecondLine {
+    from {
+        transform: translateY(-1657.16px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
