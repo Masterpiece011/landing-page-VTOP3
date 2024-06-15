@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body {
-    max-width: 1920px;
-    margin: 0 auto;
     font-family: "Lexend", sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #191D0A;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 body::-webkit-scrollbar {
@@ -25,36 +28,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #F97247;
     border-radius: 50px;
-}
-
-body::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -130px;
-    left: 80px;
-    width: 226px;
-    height: 1303px;
-    background: rgba(249, 71, 188, 1);
-    box-shadow: rgba(249, 71, 188, 1) 0px 0px 70px 90px;
-    opacity: 0.2;
-    transform: rotate(-54.31deg);
-    border-radius: 50%;
-    z-index: -2;
-}
-
-body::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 670px;
-    left: 1605px;
-    width: 574px;
-    height: 574px;
-    background: rgba(249, 146, 71, 1);
-    // background: linear-gradient(rgba(249, 146, 71, 0.2) 0%, rgba(242, 157, 162, 0.2) 100%);
-    box-shadow: rgba(249, 146, 71, 1) 0px 0px 70px 120px;
-    opacity: 0.2;
-    border-radius: 50%;
-    z-index: -2;
 }

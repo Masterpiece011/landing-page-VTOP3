@@ -9,13 +9,18 @@
     border-top: 4px solid #F97247;
     border-right: 4px solid #F97247;
     border-left: 4px solid #F97247;
+    background: rgb(49, 18, 18);
+    background: linear-gradient(90deg, rgba(49, 18, 18, 1) 0%, rgba(49, 18, 18, 1) 50%, rgba(92, 48, 41, 1) 100%);
+    width: 100%;
+}
+
+.footer__content {
+    padding: 40px 140px 24px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: last baseline;
     justify-content: space-between;
-    padding: 40px 140px 24px;
-    background: rgb(49, 18, 18);
-    background: linear-gradient(90deg, rgba(49, 18, 18, 1) 0%, rgba(49, 18, 18, 1) 50%, rgba(92, 48, 41, 1) 100%);
 }
 
 .footer_page-links-list {
